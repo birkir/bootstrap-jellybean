@@ -1,0 +1,348 @@
+
+/**
+ * BUTTONS
+ */
+.btn {
+	font-family: Roboto, sans-serif;
+	border: none;
+	background: #474747;
+	border-radius: 1px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 2px 3px rgba(0,0,0,0.5);
+	   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 2px 3px rgba(0,0,0,0.5);
+	        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 2px 3px rgba(0,0,0,0.5);
+	color: #fff;
+	text-shadow: none;
+	font-weight: 200;
+	vertical-align: middle;
+}
+
+.btn:focus,
+.btn:hover {
+	color: #fff;
+	outline: none;
+	background: #1f5366;
+	-webkit-box-shadow: inset 0 0 1px 2pt #037ea7, 0 2px 3px rgba(0,0,0,0.5);
+	 -moz-box-shadow: inset 0 0 1px 2pt #037ea7, 0 2px 3px rgba(0,0,0,0.5);
+	      box-shadow: inset 0 0 1px 2pt #037ea7, 0 2px 3px rgba(0,0,0,0.5);
+}
+
+.btn:active,
+.btn-group.open .btn.dropdown-toggle {
+	background: #2c94bb;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.5), 0 0 2px 2pt rgba(51, 181, 229, 0.6);
+	 -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.5), 0 0 2px 2pt rgba(51, 181, 229, 0.6);
+	      box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 3px rgba(0,0,0,0.5), 0 0 2px 2pt rgba(51, 181, 229, 0.6);
+	border: none;
+}
+
+/**
+ * DROPDOWNS
+ */
+.navbar .nav>li>.dropdown-menu:before,
+.navbar .pull-right>li>.dropdown-menu:after,
+.navbar .nav>li>.dropdown-menu.pull-right:after {
+	display: none;
+}
+
+.dropdown-menu {
+  display: block;
+  z-index: -1;
+  background-color: #222;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 100ms;
+  -webkit-transform: scale(.8, .8) translateY(-20px);
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.open .dropdown-menu {
+  opacity: 1;
+  -webkit-transform: scale(1, 1) translateY(0);
+  z-index: 99;
+}
+
+.dropdown-menu li a {
+	width: 200px;
+	color: #f0f0f0;
+	font-weight: normal;
+	border-top: 1px solid #333;
+	padding: 10px;
+}
+
+.dropdown-menu li:first-child a {
+	border-top: none;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+	background: rgba(51, 181, 229, 0.5);
+}
+
+/**
+ * NAVBARS
+ */
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-inner {
+	background: #222;
+	border-radius: 0;
+	border: none;
+  	border-bottom: 1px solid #33b5e5;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+	padding: 0;
+}
+
+.navbar .brand {
+	color: #f0f0f0;
+	text-shadow: none;
+	padding: 13px 20px;
+}
+.navbar .brand:first-child {
+	margin-left: 0;
+}
+
+.navbar .nav {
+	margin: 0;
+	padding: 0;
+}
+
+
+.navbar .nav > li > a.action {
+	font-size: 24px;
+	text-shadow: none;
+	color: #fff;
+}
+
+.navbar .nav > li > a.action:focus,
+.navbar .nav > li > a.action:active {
+	background-color: rgba(51, 181, 229, 0.5);
+	outline: none;
+}
+
+/**
+ * CHEVRON
+ */
+.chevron {
+  position: absolute;
+  display: block;
+  height: 18px;
+  left: 3px;
+}
+
+.chevron:before,
+.chevron:after {
+  position: relative;
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  content: '';
+}
+
+.chevron:before {
+  top: 10px;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+.chevron:after {
+  top: 14px;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+/**
+ * NAV
+ */
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: transparent;
+}
+
+/**
+ * NAV: NAV-TABS
+ */
+.nav-tabs {
+	border: none;
+	background-color: #333;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.nav-tabs > li {
+	margin: 0;
+	-webkit-box-flex: 1;
+	   -moz-box-flex: 1;
+	        box-flex: 1;
+  whitespace: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+.nav-tabs > li > a {
+	font-size: 11px;
+	font-weight: bold;
+	border-radius: 0;
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+	text-align: center;
+	color: #fff;
+	border: none;
+	border-right: 1px solid #424242;
+	background: transparent;
+	margin-right: 0px;
+	margin-top: 9px;
+	margin-bottom: 7px;
+	padding: 0 15px;
+}
+
+.nav-tabs > li > a:hover {
+	background-color: transparent;
+	border-color: #424242;
+}
+
+.nav-tabs > li:focus,
+.nav-tabs > li:active {
+	background-color: rgba(51, 181, 229, 0.6);
+	padding-bottom: 5px;
+}
+
+.nav-tabs > li:focus > a:hover,
+.nav-tabs > li:active > a:hover,
+.nav-tabs > li:focus > a,
+.nav-tabs > li:active > a {
+	border-color: transparent;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+	border: none;
+	border-right: 1px solid #424242;
+	background: transparent;
+	color: #fff;
+}
+
+.nav-tabs > .active {
+	border-bottom: 5px solid #33b5e5;
+	padding-bottom: 0 !important;
+}
+
+/**
+ * ADD FIXED TABS
+ */
+.nav-justified {
+	width: 100%;
+}
+.nav-justified > li {
+	display: table-cell;
+	float: none;
+	width: 1%;
+	text-align: center;
+}
+
+
+/**
+ * PROGRESS BAR
+ */
+.progress {
+	height: 4px;
+	background: #2E2E2E;
+	box-shadow: none;
+	border-radius: 0;
+}
+.progress .bar {
+	background: #33b5e5;
+	box-shadow: none;
+}
+
+
+/**
+ * FORMS
+ */
+label {
+	display: block;
+	border-bottom: 2px solid #595959;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 5px 3px;
+	margin-top: 10px;
+	color: #ccc;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #333;
+	background: transparent;
+	color: #fff;
+	box-shadow: none;
+	-webkit-transition: border ease-out 0.2s;
+	transition: border ease-out 0.2s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	border: none;
+	border-bottom: 1px solid #037ea7;
+	outline: none;
+	box-shadow: none;
+}
+
+label.checkbox,
+label.radio {
+	border-bottom: 0;
+	height: 20px;
+	padding: 4px 6px;
+	text-transform: none;
+	font-weight: normal;
+	margin-top: 0;
+	border-bottom: 1px solid #333;
+}
+label.checkbox input[type="checkbox"],
+label.radio input[type="radio"] {
+	float: right;
+}
+
+label.checkbox:active,
+label.radio:active {
+	background-color: rgba(51, 181, 229, 0.6);
+}
+
+.form-actions {
+	background-color: transparent;
+	border: none;
+	padding: 4px 0 0;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Jelly Bean</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/icomoon.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-jellybean.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="mobileframe">
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav pull-left">
+            <li>
+              <a href="#" class="action">
+                <!--<b class="chevron"></b>-->
+                <i class="icon-home"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="brand">
+            Lorem ipsum
+          </div>
+          <ul class="nav pull-right">
+            <li><a href="#" class="action"><i class="icon-search"></i></a></li>
+            <li>
+              <a href="#" class="action dropdown-toggle" data-toggle="dropdown"><i class="icon-settings"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Awesome</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabbable">
+        <ul class="nav nav-tabs nav-justified">
+          <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+          <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+          <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+    <form style="padding: 0 25px;">
+      <div class="control-group">
+        <label class="control-label" for="inputEmail">Email</label>
+        <div class="controls">
+          <input type="text" id="inputEmail" placeholder="Email" class="input-block-level" >
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputPassword">Password</label>
+        <div class="controls">
+          <input type="password" id="inputPassword" placeholder="Password" class="input-block-level" >
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+      <div class="form-actions">
+  <button type="submit" class="btn btn-primary">Save changes</button>
+  <button type="button" class="btn">Cancel</button>
+</div>
+    </form>
+          </div>
+          <div class="tab-pane" id="tab2">
+      <div class="progress">
+        <div class="bar" style="width: 60%;"></div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .mobileframe {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 320px;
+        height: 480px;
+        background: rgba(0,0,0,1);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    </style>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
