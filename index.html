@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <title>Bootstrap Jelly Bean</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic" type="text/css">-->
     <link href="css/icomoon.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/bootstrap-jellybean.css" rel="stylesheet">
   </head>
   <body>
-
     <div class="mobileframe">
-
       <div class="navbar">
         <div class="navbar-inner">
           <ul class="nav pull-left">
@@ -24,60 +23,126 @@
             </li>
           </ul>
           <div class="brand">
-            Lorem ipsum
+            Application
           </div>
           <ul class="nav pull-right">
             <li><a href="#" class="action"><i class="icon-search"></i></a></li>
             <li>
               <a href="#" class="action dropdown-toggle" data-toggle="dropdown"><i class="icon-settings"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Awesome</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Refresh</a></li>
+                <li><a href="#">Delete</a></li>
+                <li><a href="#">Settings</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
-
       <div class="tabbable">
         <ul class="nav nav-tabs nav-justified">
-          <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-          <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-          <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+          <li class="active"><a href="#forms" data-toggle="tab">Forms</a></li>
+          <li><a href="#buttons" data-toggle="tab">Buttons</a></li>
+          <li><a href="#navs" data-toggle="tab">Navs</a></li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane active" id="tab1">
-    <form style="padding: 0 25px;">
-      <div class="control-group">
-        <label class="control-label" for="inputEmail">Email</label>
-        <div class="controls">
-          <input type="text" id="inputEmail" placeholder="Email" class="input-block-level" >
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label" for="inputPassword">Password</label>
-        <div class="controls">
-          <input type="password" id="inputPassword" placeholder="Password" class="input-block-level" >
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="controls">
-          <label class="checkbox">
-            <input type="checkbox"> Remember me
-          </label>
-        </div>
-      </div>
-      <div class="form-actions">
-  <button type="submit" class="btn btn-primary">Save changes</button>
-  <button type="button" class="btn">Cancel</button>
-</div>
-    </form>
+          <div class="tab-pane active" id="forms">
+            <form style="padding: 0 10px;">
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Email</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email" class="input-block-level" >
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputPassword">Password</label>
+                <div class="controls">
+                  <input type="password" id="inputPassword" placeholder="Password" class="input-block-level" >
+                  <label class="checkbox">
+                    <input type="checkbox"> Remember me
+                  </label>
+                  <label for="ans1" class="radio">
+                    <input type="radio" name="ans" value="1" id="ans1"> Yes
+                  </label>
+                  <label for="ans2" class="radio">
+                    <input type="radio" name="ans" value="2" id="ans2"> No
+                  </label>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn">Cancel</button>
+              </div>
+            </form>
           </div>
-          <div class="tab-pane" id="tab2">
-      <div class="progress">
-        <div class="bar" style="width: 60%;"></div>
-      </div>
+          <div class="tab-pane" id="buttons">
+      
+            <div style="padding: 0 10px;">
+              <div class="nav-header">Sizes</div>
+              <br>
+              <a href="#" class="btn btn-mini">Mini</a>
+              <a href="#" class="btn btn-small">Small</a>
+              <a href="#" class="btn">Normal</a>
+              <a href="#" class="btn btn-large">Large</a>
+              <br><br>
+              <a href="#" class="btn btn-block">Block</a>
+              <br>
+              <div class="nav-header">Other features</div>
+              <br>
+              <div class="btn-group">
+                <button class="btn">Left</button>
+                <button class="btn">Middle</button>
+                <button class="btn">Right</button>
+              </div>
+              <div class="btn-group">
+  <button class="btn">Action btn</button>
+  <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu pull-right">
+    <li><a href="#">asdf</a></li>
+    <li><a href="#">asdf</a></li>
+  </ul>
+</div>
+
+<br><br>
+
+          <div class="pagination pagination-centered">
+              <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="navs">
+
+            <ul class="nav nav-list">
+              <li class="nav-header">nav-list</li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test 2</a></li>
+            </ul>
+            <br>
+            <div style="padding: 0 10px;">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#">tab 1</a></li>
+                <li><a href="#">tab 2</a></li>
+              </ul>
+            </div>
+            <div class="navbar">
+              <div class="navbar-inner">
+                <ul class="nav">
+                  <li><a href="#">menu</a></li>
+                  <li><a href="#">item</a></li>
+                  <li><a href="#" class="action"><i class="icon-home"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -91,6 +156,7 @@
         width: 320px;
         height: 480px;
         background: rgba(0,0,0,1);
+        background: linear-gradient(to bottom, #040405 0%, #242A31 100%);;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
       }
