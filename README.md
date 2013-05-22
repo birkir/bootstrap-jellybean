@@ -1,5 +1,10 @@
 Just a simple css overwrite for twitter bootstrap.
 
+Preview:
+
+
+![Preview](http://i.imgur.com/xq67E65.png)
+
 
 WARNING
 =======
